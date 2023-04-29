@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_intern/pages/LoginPage.dart';
+import 'package:my_intern/utils/Routes.dart';
 import '/pages/HomePage.dart';
 
 
@@ -14,6 +15,9 @@ class myInterns extends StatelessWidget {
     return MaterialApp(
       //use this or "/" in routes
       //home:HomePage(),
+
+      //to remove debug tag on app
+      debugShowCheckedModeBanner: false,
 
       //choose theme type here
       themeMode: ThemeMode.light,
@@ -29,12 +33,11 @@ class myInterns extends StatelessWidget {
 
       //Layout manager
       routes: {
-        "/": (context) => new HomePage(),
-        "/login": (context) => new LoginPage(),
+        MyRoutes.homeRoute: (context) => new HomePage(),
+        MyRoutes.loginRoute: (context) => new LoginPage(),
       },
     );
   }
 }
 
 
-//Padding, TextFormField, Assets, Images
