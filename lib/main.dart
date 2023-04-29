@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_intern/pages/LoginPage.dart';
 import '/pages/HomePage.dart';
+
 
 void main() {
   runApp(myInterns());
@@ -17,13 +19,13 @@ class myInterns extends StatelessWidget {
       themeMode: ThemeMode.light,
 
       //customise light theme
-      theme: ThemeData(primarySwatch: Colors.blue, brightness: Brightness.light),
+      theme: ThemeData(primarySwatch: Colors.deepPurple, brightness: Brightness.light, fontFamily:GoogleFonts.lato().fontFamily ),
 
       //customise dark theme
       darkTheme: ThemeData(brightness: Brightness.dark, primarySwatch: Colors.red),
 
       //customise first route
-      initialRoute: "/home",
+      initialRoute: "/login",
 
       //Layout manager
       routes: {
@@ -33,3 +35,6 @@ class myInterns extends StatelessWidget {
     );
   }
 }
+
+
+//Padding, TextFormField, Assets, Images

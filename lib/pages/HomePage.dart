@@ -9,16 +9,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My Interns: App"),
+        title: const Text("My Interns: App"),
       ),
       body: Center(
           child: Container(
               child: Text("days = $days , time = $time , months = $months ",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 18,
                     color: Colors.blue
                   )))),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 }
