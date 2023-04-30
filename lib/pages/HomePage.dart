@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_intern/widgets/MyDrawer.dart';
 
 class HomePage extends StatelessWidget {
   final int days = 30;
@@ -8,6 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         title: const Text("My Interns: App"),
       ),
@@ -18,7 +20,7 @@ class HomePage extends StatelessWidget {
                     fontSize: 18,
                     color: Colors.blue
                   )))),
-      drawer: const Drawer(),
+      drawer:  MyDrawer(),
     );
   }
 }

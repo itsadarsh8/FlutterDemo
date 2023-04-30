@@ -14,7 +14,7 @@ class myInterns extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       //use this or "/" in routes
-      //home:HomePage(),
+      home:HomePage(),
 
       //to remove debug tag on app
       debugShowCheckedModeBanner: false,
@@ -29,7 +29,7 @@ class myInterns extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark, primarySwatch: Colors.red),
 
       //customise first route
-      initialRoute: "/login",
+      //initialRoute: "/login",
 
       //Layout manager
       routes: {
